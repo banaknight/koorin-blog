@@ -39,5 +39,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `noto sans jp`,
+          `muli\:400,700`,
+        ],
+        display: "swap",
+      },
+    },
   ],
 }
