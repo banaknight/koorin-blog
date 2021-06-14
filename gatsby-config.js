@@ -11,15 +11,32 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
-        path: `${__dirname}/src/posts`
+        name: `images`,
+        path: `${__dirname}/src/images`
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-graphql`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
+        typeName: `WPGraphQL`,
+        fieldName: `wpgraphql`,
+        url: `https://www.koorin.blog/graphql`
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugin: [
+          {
+            resolve: `gatsby-remark-image`,
+            oprions: {
+              maxWidth: 1200,
+            },
+          },
+        ],
       },
     },
   ],
