@@ -1,10 +1,10 @@
 export default {
   fonts: {
-    main: "Muli, sans-serif",
-    code: "Noto Sans JP, sans-serif",
+    main: "Noto Sans JP, sans-serif",
   },
   colors: {
     main1: "hsl(207,70%,59%)",
+    light1: "hsl(0,0%,97%)",
   },
   breakpoints: {
     pc: "only screen and (min-width: 1025px)",

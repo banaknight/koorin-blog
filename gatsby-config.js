@@ -26,27 +26,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        extensions: [`.md`, `.mdx`],
-        gatsbyRemarkPlugin: [
-          {
-            resolve: `gatsby-remark-image`,
-            oprions: {
-              maxWidth: 1200,
-            },
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `noto sans jp`,
-          `muli\:400,700`,
+          `Noto Sans JP\:400,700`,
         ],
-        display: "swap",
+        display: 'swap',
       },
     },
   ],
